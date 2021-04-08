@@ -10,8 +10,8 @@
   }
 
   main {
-      width: 100%;
-      height: 100%;
+      width: 100vw;
+      height: 100vh;
       background-color: #505050;
   }
 
@@ -25,30 +25,65 @@
 
   .sky {
       width: 100%;
-      height: 75%;
-      background-color: skyblue;
+      height: 580px;
       background-image: url('../img/sky_background.png');
-      position: relative;
+      background-repeat: repeat-x;
+      background-size: cover;
+   
 
+      position: relative;
   }
+
+
+  .sky-container {
+    width: 100%;
+    height: 75%;
+    background-color: skyblue;
+    background-image: url('../img/sky_background.png');
+    background-repeat: repeat-x;
+  }
+
 
 .ground {
     width: 100%;
-    height: 26%;
+    height: 25%;
     background-color: #DDD894;
     background-image: url('../img/ground_background.png');
     background-repeat: repeat-x;
+    background-position: 0px -4px;
     z-index: 2;
+}
 
+.move-ground {
+    animation: move-right 10s infinite linear;
+    -webkit-animation: move-right 10s infinite linear;
+}
+
+
+@keyframes move-right {
+    from {
+        background-position: 100% -4px;
+    } to {
+        background-position: 0% -4px;
+    }
 }
 
 
 .pipe {
-    position: absolute;
-    bottom: 180px;
-    left: 0;
     width: 60px;
     height: 300px;
+    position: absolute;
     background-image: url('../img/flappybird-pipe.png');
-    z-index: 1;
+    z-index: 1;   
+}
+
+.bottom-pipe {
+    bottom: 0;
+    left: 0;
+}
+
+.top-pipe {
+    top: 0;
+    left: 0;
+    transform: rotate(180deg);
 }
