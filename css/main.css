@@ -47,6 +47,7 @@
     background-color: skyblue;
     background-image: url('../img/sky_background.png');
     background-repeat: repeat-x;
+    position: relative;
     z-index: 0;
   }
 
@@ -109,9 +110,17 @@
     color: whitesmoke;
     letter-spacing: 4px;
     -webkit-text-stroke: 2px #000;
-
 }
 
 
-
+.bird {
+    
+    position: absolute;
+    width: 60px;
+    height: 45px;
+    left: 50px;
+    top: 0px;
+    z-index: 2;
+    background-image: url('../img/flappy-bird.png');
+}
 
