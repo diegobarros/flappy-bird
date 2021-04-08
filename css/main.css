@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  main {
+      width: 100%;
+      height: 100%;
+      background-color: #505050;
+  }
+
+  #game-display {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+      justify-content: start;
+  }
+
+  .sky {
+      width: 100%;
+      height: 75%;
+      background-color: skyblue;
+      background-image: url('../img/sky_background.png');
+      position: relative;
+
+  }
+
+.ground {
+    width: 100%;
+    height: 26%;
+    background-color: #DDD894;
+    background-image: url('../img/ground_background.png');
+    background-repeat: repeat-x;
+
+}
+
+
+.pipe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 300px;
+    background-image: url('../img/flappybird-pipe.png');
+
+}
