@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Dimitri Swank';
+    src: url('DimitriSwank.eot');
+    src: url('DimitriSwank.eot?#iefix') format('embedded-opentype'),
+        url('DimitriSwank.woff2') format('woff2'),
+        url('DimitriSwank.woff') format('woff'),
+        url('DimitriSwank.ttf') format('truetype'),
+        url('DimitriSwank.svg#DimitriSwank') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
