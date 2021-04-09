@@ -122,5 +122,13 @@
     top: 0px;
     z-index: 2;
     background-image: url('../img/flappy-bird.png');
+    
 }
 
+@keyframes bird-fly {
+    from {
+        transform: translateY(0px);
+    } to {
+        transform: translateY(50px);
+    }
+}

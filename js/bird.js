@@ -8,18 +8,27 @@ class Bird {
         this.skyHeight = this.skyElement.clientHeight;
 
         this.bird = document.createElement("div");
-        this.bird.setAttribute("id", "bird-");
+        this.bird.setAttribute("id", "bird-1");
         this.bird.setAttribute("class", "bird");
-
         this.skyElement.appendChild(this.bird);
 
+        this.resetPosition();
+
+    }
+
+
+    resetPosition() {
         this.x = this.skyWidth / 4;
         this.y = this.skyHeight / 2;
-
         this.bird.style.left = this.x + "px";
-        this.bird.style.top = this.y + "px";
+        this.bird.style.top = this.y + "px"; 
+    }
 
-        this.speed = 0;
+
+    jump() {
+
+        console.log("pulando");
+
     }
 
 
